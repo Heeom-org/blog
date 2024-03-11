@@ -15,7 +15,7 @@ include: ["_pages"]
 permalink: /:title/
 
 # Authors
-authors:
+#authors:
   #sal:
   #  name: Sal
   #  display_name: Sal
