@@ -77,6 +77,12 @@ post_class: post-template
                 {{content}}
             </div>
 
+            <p>
+            <!-- Facebook like -->
+                <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
+            <!-- Facebook like -->
+            </p>
+
             <!-- Rating -->
             {% if page.rating %}
             <div class="rating mb-4 d-flex align-items-center">
@@ -93,10 +99,6 @@ post_class: post-template
                 {% endif %}
                 </small>
             </p>
-
-            <!-- Facebook like -->
-            <div class="fb-like" data-href="https://heeom.org" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
-            <!-- Facebook like -->
 
             <!-- Post Categories -->
             <div class="after-post-cats">
