@@ -75,7 +75,7 @@ ga('send', 'pageview');
         <!-- Begin Menu -->
 
             <ul class="navbar-nav ml-auto">
-
+		<!--
                 {% if page.url == "/" %}
                 <li class="nav-item active">
                 {% else %}
@@ -83,6 +83,7 @@ ga('send', 'pageview');
                 {% endif %}
                 <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
                 </li>
+		-->
 		<!--
                 <li class="nav-item">
                 <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
@@ -104,9 +105,14 @@ ga('send', 'pageview');
                 <a target="_blank" class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll"><i class="fab fa-github"></i> Fork on Github</a>
                 </li>
 		-->
-
+		<!-- Google CSE -->
+		<script async src="https://cse.google.com/cse.js?cx=24b42c15a38424e1c">
+		</script>
+		<div class="gcse-search"></div>
+		<!-- Google CSE -->
+		<!--
                 {% include search-lunr.html %}
-
+		-->
             </ul>
 
         <!-- End Menu -->
