@@ -20,6 +20,10 @@ image:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DoLNQLYOycU?si=Pjj2VA289zbgAUQ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+Cover곡 중엔 이분께 제일 좋다. 더블린 가고 싶다.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o9FOvZlmmK8?si=dnYUMsj0nPrUbvlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 **A green plastic watering can**
 
 초록색 플라스틱 물뿌리개.
