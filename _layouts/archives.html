@@ -1,28 +1,39 @@
 ---
-layout: default
+layout: page
 title: Archives
 ---
-<div id="post">
-	<h1>Archives</h1>
-	<p>All posts can be found on this page or by <a href="{{site.base_url}}/search" title="Search">searching</a>. Bits (short-form pieces) are not included here and have <a href="{{site.base_url}}/bits" title="Bits">their own section</a>.</p><br/>
-		
-	{% for year in (2023..2025) reversed %}
-		{% if site.collated_posts[year] %}
-		<h2 class="archives">{{ year }}</h2>
-		{% endif %}
-		{% for month in (1..12) reversed %}
-			{% if site.collated_posts[year][month] %}
-			<h3>{{ month | to_month }}</h3>
-			<ul class="archive-page">
-			{% for day in (1..31) reversed %}
-				{% if site.collated_posts[year][month][day] %}
-					{% for post in site.collated_posts[year][month][day] reversed %}
-					<li><a href='{{ site.base_url }}{{ post.url }}' title="{{ post.title }}">{{ post.title }}</a></li>
-					{% endfor %}
-				{% endif %}
-			{% endfor %}
-			</ul>
-			{% endif %}
-		{% endfor %}
-	{% endfor %}
+
+<div class="tags-expo">
+  <div class="tags-expo-section">
+    {% for post in site.posts  %}
+    
+      {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+      {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+      {% if forloop.first %}
+      <h2 id="{{ this_year }}-ref">{{this_year}}</h2>
+      <ul>
+      {% endif %}
+
+      <li>
+        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+          <!-- <small class="post-date">{{ post.date | date_to_string }}</small> -->
+          <small class="post-date">{{ post.date | date: "%Y년 %m월 %d일" }}</small>
+        </a>
+      </li>
+
+      {% if forloop.last %}
+      </ul>
+      {% else %}
+          {% if this_year != next_year %}
+          </ul>
+          <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
+          <ul>
+          {% endif %}
+      {% endif %}
+
+    {% endfor %}
+    </ul>
+  </div>
 </div>
