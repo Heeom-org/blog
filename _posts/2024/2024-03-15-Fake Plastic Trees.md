@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fake Plastic Trees"
-categories: [생각]
+categories: [음악]
 tags: [Radiohead, 음악]
 image: 
 ---
